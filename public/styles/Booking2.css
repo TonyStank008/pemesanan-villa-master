@@ -1,0 +1,162 @@
+header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.container-semua {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightpink; */
+}
+
+.container-isi {
+    width: 80%;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container-atas {
+    width: calc(20% + 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: lightgreen; */
+}
+
+.booking-process {
+    width: calc(100% + 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.progress-dot {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.pro-1,
+.pro-2,
+.pro-3 {
+    font-family: "Poppins";
+    font-weight: 600;
+    display: flex;
+    background-color: #d9d9d9;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+}
+
+.pro-2 {
+    background-color: #6558f5;
+}
+
+.container-tengah {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    gap: 30px;
+    /* background-color: lightskyblue; */
+}
+
+.selectable img {
+    width: 15%;
+    z-index: 1;
+}
+
+.selectable {
+    /* width: 0%; */
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 0px 15px 0px 15px;
+}
+
+.selectable p {
+    font-weight: 600;
+}
+
+.container-bawah {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+    /* background-color: lavender; */
+}
+
+.selectable.active {
+    background-color: #ffc107;
+}
+
+.container-bawah button {
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    height: 50px;
+    border: none;
+    background-color: #6558f5;
+    color: white;
+}
+
+#button-1 {
+    width: calc(100% + 30px);
+}
+
+#button-2 {
+    width: calc(30% + 30px);
+}
+
+@media screen and (max-width: 768px) {
+    .kiri-bawah {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-tengah {
+        width: 100%;
+    }
+
+    .container-isi {
+        width: 100%;
+        /* background-color: lightblue; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .selectable img {
+        width: 20%;
+    }
+}

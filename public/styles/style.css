@@ -1,0 +1,843 @@
+:root {
+    --pr-color: #e9bf4e;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* navbar section*/
+
+.navbar {
+    z-index: 3;
+}
+
+.navbar-brand {
+    width: 198px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #ffffff;
+}
+
+.nav-link {
+    font-size: 16px;
+    border: none;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    color: #6558f5;
+    border: none;
+}
+
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background-color: #6558f5;
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    color: #6558f5;
+}
+
+.button-primary:hover {
+    width: 133px;
+    height: 40px;
+    background-color: #6558f5;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.slider img {
+    border-radius: 20px;
+}
+
+.button-secondary {
+    width: 133px;
+    height: 40px;
+    background-color: #6558f5;
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    color: #6558f5;
+}
+
+.button-secondary:hover {
+    width: 133px;
+    height: 40px;
+    background-color: #6558f5;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/*  Dropdown menu */
+
+.dropdown-menu {
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(red, green, blue, alpha);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  hero section*/
+
+#hero {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-hero {
+    height: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-tagline {
+    margin-top: 100px;
+}
+
+.hero-tagline p {
+    position: absolute;
+    width: 453px;
+    height: 72px;
+    left: 97px;
+    top: 368px;
+
+    font-family: "Poppins";
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.hero-tagline h1 {
+    position: absolute;
+    width: 574px;
+    height: 144px;
+    left: 93px;
+    top: 206px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 72px;
+    /* or 138% */
+    color: #000000;
+}
+
+.button-lg-primary {
+    position: absolute;
+    width: 237px;
+    height: 70px;
+    left: 93px;
+    top: 478px;
+
+    background: #6558f5;
+    border-radius: 10px;
+    border: none;
+}
+
+.panah {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 343px;
+    top: 492px;
+}
+
+/* Section layanan */
+
+#Layanan span {
+    color: #ffffff;
+}
+
+#Layanan h2 {
+    color: #000000;
+    text-align: left;
+}
+
+.player {
+    margin: auto;
+    border-radius: 75px;
+    overflow: hidden;
+    z-index: 1;
+    height: 500px;
+    width: 1000px;
+}
+
+/*  Layanan section*/
+
+#Layanan {
+    padding: 100px 0px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500px;
+    color: #e2b03d;
+}
+
+.sub-title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.card-layanan {
+    margin-top: 40px;
+    width: 100%;
+    height: 313px;
+    border-radius: 20px;
+    background-color: #fff;
+
+    padding: 40px;
+    box-shadow: #f4f4f4;
+    transition: all 0.1s ease-in;
+}
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #e2b03d;
+    border-radius: 50%;
+    transition: all 0.1s ease-in;
+}
+
+.card-layanan h3 {
+    color: #000;
+    font-size: 24px;
+    transition: all 0.2s ease-in;
+}
+
+.card-layanan p {
+    color: #000;
+    font-size: 14px;
+    transition: all 0.3s ease-in;
+}
+
+/* ketika hover */
+
+.card-layanan:hover {
+    margin-top: 40px;
+    width: 100%;
+    height: 313px;
+    border-radius: 20px;
+    background-color: #0ce4ae;
+    background: linear-gradient(#16b9ac, #000);
+    padding: 40px;
+    box-shadow: #0ce4ae;
+    transition: all 0.2s ease-in;
+}
+
+.card-layanan:hover h3 {
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.2s ease-in;
+}
+
+.card-layanan:hover p {
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease-in;
+}
+
+.card-layanan:hover .circle-icon {
+    background-color: #ffffff;
+    transition: all 0.2s ease-in;
+}
+
+/* search section */
+
+#search {
+    background-image: url(aset/Kamar\ Tamu.jpg);
+    height: 80vh;
+    background-size: cover;
+}
+
+#search h2 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+#search p {
+    color: #ffffff;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.input-cari {
+    height: 88px;
+}
+
+.input-cari:focus {
+    border: none;
+}
+
+.input-cari .button-secondaryy {
+    width: 200px;
+    height: 88px;
+
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0px 0px 0px 9px;
+    border: none;
+    border-radius: 0 10px 0 10px;
+}
+
+.input-cari .btn-primaryy {
+    height: 88px;
+    background-color: #e2b03d;
+    color: #fff;
+    font-size: 36px;
+    border: none;
+    font-weight: 500;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 0 0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: aqua;
+    border-radius: 0 9px 0 0;
+    font-weight: 900;
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+    border: none;
+}
+
+/*  section hotel list*/
+
+#hotelList {
+    background: #eee;
+    width: 100%;
+}
+
+.villa-card {
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px #bebebe;
+    padding: 10px;
+    background-color: #fff;
+    color: #697e91;
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+.villa-card:hover {
+    box-shadow: 12px 12px 12px #bebebe;
+}
+
+.villa-card img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.villa-card strong {
+    font-weight: 600;
+    color: #425275;
+}
+
+.villa-card .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #bed6fb;
+    border-radius: 16px 16px 0 16px;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1 rem;
+    font-weight: 600;
+    color: #425475;
+}
+
+.villa-card .pricing small {
+    color: #707a91;
+    font-size: 0.75em;
+    margin-left: 0.15em;
+}
+
+.villa-card .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #425675;
+}
+
+/* Detail Villa */
+#detailvilla .villa-image {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 60%;
+    max-height: 500px;
+}
+#detailvilla .villa-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    margin: 0 auto;
+}
+
+#detailvilla .villa-name {
+    font-weight: bold;
+    text-align: start;
+    width: 80%;
+}
+
+.carousel-facility {
+    margin-bottom: 40px;
+    width: 100%;
+}
+.carousel-facility-item {
+    max-width: 480px;
+    max-height: 360px;
+}
+.carousel-facility-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.form-booking-wrapper {
+    background: #eee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.form-booking-card {
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px #bebebe;
+    padding: 10px;
+    background-color: #fff;
+    color: #697e91;
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+.form-booking-card h2 {
+    font-size: 24px;
+    text-justify: center;
+}
+
+.card-fasilitas {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.card-fasilitas span {
+    font-weight: 500;
+    margin-top: 18px;
+    color: #000;
+}
+
+.card-fasilitas p {
+    font-size: 12px;
+}
+
+.rating-box {
+    margin-bottom: 10px;
+    border-radius: 25px;
+    text-align: center;
+}
+.rating-box .stars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.stars i {
+    font-size: 16px;
+    color: #b5b8b1;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.stars i.active {
+    color: #ffb851;
+    transform: scale(1.2);
+}
+.carousel-review .slick-track {
+    margin-left: -15px;
+}
+
+.carousel-review .slick-slide {
+    margin: 0 15px;
+}
+
+.carousel-review .slick-list {
+    margin: 0 -15px;
+}
+
+/* Section Carousel */
+
+.home .carousel-item {
+    min-height: 100vh;
+    border-radius: 50;
+    min-width: 90ch;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.home .carousel-item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.home .carousel-item .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home .carousel-item h2 {
+    font-size: 80px;
+    color: #ffffff;
+    margin: 0 0 10px;
+    opacity: 0;
+}
+
+.home .carousel-item p {
+    font-size: 30px;
+    margin: 0;
+    color: #eeeeee;
+    opacity: 0;
+}
+
+.home .carousel-item.active h2 {
+    animation: fadeInLeft 0.5s ease forwards;
+}
+
+.home .carousel-item.active p {
+    animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.home .carousel-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    z-index: 10;
+    transform: translateX(-50%);
+}
+
+.home .carousel-indicators {
+    position: relative;
+    margin: 0;
+}
+
+.home .carousel-indicators li {
+    height: 70px;
+    width: 70px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;
+}
+
+.home .carousel-indicators li.active {
+    border-color: #ffffff;
+    transform: scale(1.2);
+}
+
+.home .carousel-control-next,
+.home .carousel-control-prev {
+    height: 60px;
+    width: 60px;
+    opacity: 1;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: all 0.1s ease;
+}
+
+.home .carousel-control-next:hover,
+.home .carousel-control-prev:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.home .carousel-control-next img,
+.home .carousel-control-prev img {
+    width: 30px;
+}
+
+.home .carousel-control-next {
+    right: -90px;
+}
+
+.home .carousel-control-prev {
+    left: -90px;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+    .home .carousel-control-next,
+    .home .carousel-control-prev {
+        display: none;
+    }
+
+    .home .carousel-indicators li {
+        height: 60px;
+        width: 60px;
+    }
+
+    .home .carousel-item h2 {
+        font-size: 45px;
+    }
+
+    .home .carousel-item p {
+        font-size: 22px;
+    }
+}
+
+/* section kontak */
+
+.card-contact {
+    width: 580px;
+    height: 445px;
+    left: 693px;
+    font-weight: 700px;
+    top: 4507px;
+
+    border-radius: 50px;
+}
+
+#contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact .overlay {
+    background: rgb(255, 255, 255);
+}
+
+.card-contact {
+    width: 100%;
+
+    height: 445px;
+    left: 693px;
+    top: 4507px;
+    padding: 52px 48px;
+    margin-bottom: 21px;
+}
+
+.card-contact h1 {
+    width: 376px;
+    height: 60px;
+    left: 812px;
+    top: 4559px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+
+    color: #ffffff;
+}
+
+.buttoncontact {
+    width: 50%;
+
+    height: 50px;
+    left: 740px;
+    top: 4826px;
+    border-radius: 20px;
+    background-color: #6558f5;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+
+audio[autoplay] {
+    opacity: 0;
+}
+
+audio[autoplay] {
+    visibility: hidden;
+}
+
+footer {
+    background: #ffffff;
+    margin-top: 30px;
+}
+
+.copyright {
+    color: #ffffff;
+}
+
+footer a {
+    width: 397px;
+    height: 27px;
+    left: 876px;
+    top: 5207px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #ffffff;
+}
+
+#contact .container {
+    margin-top: 100px;
+}
+
+.form-control .label {
+    border-radius: 100px;
+}
+
+.aboutus .img-about {
+    display: flex;
+    justify-content: center;
+}
+
+.form-booking {
+    justify-content: center;
+}
+
+#category {
+    margin: auto;
+}
+
+/* Rating */
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side,
+    .middle {
+        width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+        display: none;
+    }
+}
+
+.my-input input[type="text"] {
+    background-color: #ffffff;
+    width: 70%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgray;
+}

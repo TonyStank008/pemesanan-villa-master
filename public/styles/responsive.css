@@ -1,0 +1,17 @@
+.btn-primaryy {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+}
+
+.btn-secondaryy{
+    display: block;
+    width: 100%;
+}
+
+
+.form-control {
+    width: 100%;
+    display: block;
+}
+

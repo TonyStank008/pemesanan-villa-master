@@ -1,0 +1,342 @@
+<?php
+session_start();
+include("connection.php");
+include("function.php");
+$user_data = check_login($con);
+
+$query = "SELECT  FROM gambar_banner";
+$result = mysqli_query($con, $query);
+
+
+?>
+
+<?php include 'navbar.php'; ?>
+<!--Section Layanan-->
+<section id="Layanan">
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-md-5">
+                <h1 style="font-weight: bold;">Rest Your Job And Start Your Holiday
+                    <?php echo $user_data['user_name'];?>!</h1>
+                <br>
+                <p><span class="fw-bold" style="color: black;">Welcome! </span>We Provide best place to people who wants
+                    take holiday!</p>
+                <a href="explore.php" class="btn btn-primary">Explore!</a>
+                <a href="logout.php" class="btn btn-primary">Keluar</a>
+
+            </div>
+            <div class="col-md-7">
+                <div class="slider">
+                    <div><img src="aset/<?php echo $gambar['slide_1']; ?>" alt="Gambar liburan"
+                            style="border-radius: 10px;"></div>
+                    <div><img src="aset/<?php echo $gambar['slide_2']; ?>" alt="Gambar liburan"
+                            style="border-radius: 10px;"></div>
+                    <div><img src="aset/<?php echo $gambar['slide_3']; ?>" alt="Gambar liburan"
+                            style="border-radius: 10px;"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function () {
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    });
+</script>
+
+<!--Section Layanan-->
+<section id="Layanan">
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-md-6 text-center">
+                <h3 style="text-align: start; font-weight: bold;">Villa Premium</h3>
+                <span class="sub-title">LG Property hadir menjadi solusi bagi kamu</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <a href="detailvilla.php">
+                    <div class="card p-2" style="width: 22rem;">
+                        <img src="aset/villacanggu_bali.jpg" alt="" style="border-radius: 20px; height: 400px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: 800;">Villa Mana Canggu</h4>
+                            <p class="mb-4">Bali, Indonesia<br>
+                                <span class="text-success">Tersedia</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <a href="detailvilla.php">
+                    <div class="card p-2" style="width: 22rem;">
+                        <img src="aset/villaedge.jpeg" alt="" style="border-radius: 20px; height: 400px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: 800;">The Edge</h4>
+                            <p class="mb-4">Bali, Indonesia<br>
+                                <span class="text-success">Tersedia</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <div class="card p-2" style="width: 22rem;">
+                    <img src="aset/villa_voyage.jpg" alt="" style="border-radius: 20px; height: 400px;">
+                    <div class="card-body">
+                        <h4 style="font-weight: 800;">Villa Voyage</h4>
+                        <p class="mb-4">Bali, Indonesia<br>
+                            <span class="text-success">Tersedia</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <a href="detailvilla.php">
+                    <div class="card p-2" style="width: 22rem;">
+                        <img src="aset/villaedge.jpeg" alt="" style="border-radius: 20px; height: 400px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: 800;">The Edge</h4>
+                            <p class="mb-4">Bali, Indonesia<br>
+                                <span class="text-success">Tersedia</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <a href="detailvilla.php">
+                    <div class="card p-2" style="width: 22rem;">
+                        <img src="aset/villaedge.jpeg" alt="" style="border-radius: 20px; height: 400px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: 800;">The Edge</h4>
+                            <p class="mb-4">Bali, Indonesia<br>
+                                <span class="text-success">Tersedia</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <a href="detailvilla.php">
+                    <div class="card p-2" style="width: 22rem;">
+                        <img src="aset/villaedge.jpeg" alt="" style="border-radius: 20px; height: 400px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: 800;">The Edge</h4>
+                            <p class="mb-4">Bali, Indonesia<br>
+                                <span class="text-success">Tersedia</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+<!--Section Layanan-->
+<section id="Layanan">
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-md-6 text-center">
+                <h3 style="text-align: start; font-weight: bold;">Villa Nyaman</h3>
+                <span class="sub-title">LG Property hadir menjadi solusi bagi kamu</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <div class="card p-2" style="width: 22rem;">
+                    <img src="aset/villacanggu_bali.jpg" alt="" style="border-radius: 20px; height: 400px;">
+                    <div class="card-body">
+                        <h4 style="font-weight: 800;">Villa Mana Canggu</h4>
+                        <p class="mb-4">Bali, Indonesia<br>
+                            <span class="text-success">Tersedia</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <a href="detailvilla.php">
+                    <div class="card p-2" style="width: 22rem;">
+                        <img src="aset/villaedge.jpeg" alt="" style="border-radius: 20px; height: 400px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: 800;">The Edge</h4>
+                            <p class="mb-4">Bali, Indonesia<br>
+                                <span class="text-success">Tersedia</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <div class="card p-2" style="width: 22rem;">
+                    <img src="aset/villa_voyage.jpg" alt="" style="border-radius: 20px; height: 400px;">
+                    <div class="card-body">
+                        <h4 style="font-weight: 800;">Villa Voyage</h4>
+                        <p class="mb-4">Bali, Indonesia<br>
+                            <span class="text-success">Tersedia</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <a href="detailvilla.php">
+                    <div class="card p-2" style="width: 22rem;">
+                        <img src="aset/villaedge.jpeg" alt="" style="border-radius: 20px; height: 400px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: 800;">The Edge</h4>
+                            <p class="mb-4">Bali, Indonesia<br>
+                                <span class="text-success">Tersedia</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <a href="detailvilla.php">
+                    <div class="card p-2" style="width: 22rem;">
+                        <img src="aset/villaedge.jpeg" alt="" style="border-radius: 20px; height: 400px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: 800;">The Edge</h4>
+                            <p class="mb-4">Bali, Indonesia<br>
+                                <span class="text-success">Tersedia</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <a href="detailvilla.php">
+                    <div class="card p-2" style="width: 22rem;">
+                        <img src="aset/villaedge.jpeg" alt="" style="border-radius: 20px; height: 400px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: 800;">The Edge</h4>
+                            <p class="mb-4">Bali, Indonesia<br>
+                                <span class="text-success">Tersedia</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+<section id="Story display" style="margin-top: 150px;">
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-md-6 text-center">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-evenly">
+                <div class="card-p-2 " style="width: 22rem;">
+                    <img src="aset/image_story.webp" alt="" style="border-radius: 20px; width: 22rem;">
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-4 mb-4 d-flex">
+                <div class="story p-2" style="width: 22rem;">
+                    <div class="story">
+                        <h4 style="font-weight: bold;">Marcello Kevin</h4>
+                        <p class="mb-2">Senior Programmer at Indodax</p>
+                        <div class="rate" style="margin-bottom:2px;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+
+                        <p>Disini saya bisa menemukan tempat tempat indah di Indonesia.</p>
+                        <div style="margin-top: 10px;">
+                            <a href="story.php"> <button type="button" class="btn btn-primary">Read Story</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- <section class="video">
+
+        <h1 class="text-center" style="color: #E9BF4E; font-weight: 1000;">Look our product!</h1>
+        <div class="player text-center" style="margin-top: 0px;">
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/VItD7_Sifuk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section> -->
+
+
+<?php include 'footer.php'; ?>
+
+
+
+<script src="bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
